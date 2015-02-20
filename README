@@ -1,0 +1,62 @@
+To change mdbtest or Standard as the default comparison directories
+set the variables as for example
+export mdbtest=6.0.882
+export standard=5.9.10
+
+./senselabmodels.py will copy all the ModelDB NEURON model zip files
+into the modeldb directory.  Alternatively one or more model object
+ids can be passed on the command line to restrict the downloaded files
+to these, e.g.
+./senselabmodels.py object_id_1 object_id_2 object_id_3
+The downloaded files are named in the format
+modeldb/object_id_number.zip
+
+sh mkmap.sh will regenerate a file map.txt that lists model object ids
+paired with the name of the top level directory name from the model
+zip file.
+
+nrnziprun.dat tells how to run models for which the default single
+verify_graph() is insufficient. The format is
+modelname
+commands
+blank line
+
+sh noruninfo.sh
+tells which models do not have an explanation of how to run them
+(default verify_graph_())
+
+sh missing.sh
+prints the names of models which have very small or missing gout files
+
+sh newzipdat.sh
+creates a nrnziprun.dat file with all model names and preserving the
+special run methods of the previous nrnziprun.dat file.
+
+./verify.sh takes model ids as the argument list and runs those models with
+the instructions in the nrnziprun.dat file for that model or merely a
+verify_graph_().
+Without args it does all the modeldb zip files.
+
+the statement "verify_graph_()" is the workhorse as it saves all lines of
+all graphs to the gout file in the tmp/prefix_of_nrnzip directory. The
+file executed after the mosinit.hoc file is driver.hoc. In the
+tmp/prefix_of_nrnzip/extracted_nrnzip_dir one can run
+nrngui mosinit.hoc ../driver.hoc
+to do the same thing as the script (although stderr and stdout will come
+out on the console instead of the files in tmp/prefix_of_nrnzip.
+
+./showerr.sh lists the models that gave an error on nrnivmodl or
+gave an error message when launched.
+
+./cmpgoutfiles.sh will list all the nrnzip files where gout differs between
+the Standard and the tmp
+
+./cmpgout.sh will execute
+	nrngui showgout.hoc
+for all the gout's that differ.
+To see just one file use
+./cmpgout.sh dirname
+and it will show Standard/dirname/gout and tmp/dirname/gout
+The Standard lines will be black and the tmp lines will be in red.
+Maximum differences between lines will be printed.
+

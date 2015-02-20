@@ -1,0 +1,1416 @@
+2VN 139654
+
+5chan 3673
+verify_graph_()
+objref save_window_[1]
+graphList[0].remove_all
+graphList[1].remove_all
+objref VoltageClamp
+load_file("fig3a.ses")
+run()
+verify_graph_()
+
+ACh_ModelDB 149739
+demo_run()
+verify_graph_()
+
+AkemannEtAl2009 123453
+run_model(prot)
+verify_graph_()
+
+AkemannKnopfelPurkinje_cell_model 80769
+restart("shortRun")
+verify_graph_()
+
+Alle_et_al_2009 135838
+
+AnwarEtAl2010 138382
+
+Arsiero_et_al2007 83590
+/* beginscript
+sed 's/mustart  = -0.400/mustart  = 0.800/
+ s/sigmastart  = 0.064/sigmastart  = 0.128/
+' mylibs/TFparams.hoc > temp.tmp
+mv temp.tmp  mylibs/TFparams.hoc
+endscript */
+
+AshhadNarayanan2013 150551
+
+BGnet 127388
+
+BahlEtAl2012 146026
+
+BahmerLangner2007 87454
+chdir("NEURON_Chopper_Network_Simulation")
+xopen("mosinit.hoc")
+runhere()
+verify_graph_()
+
+BalbiEtAl2013 151443
+
+Basketcell 114047
+tstop=1e1
+xopen("fig6.hoc")
+verify_graph_()
+
+BerzThetaGamm2013 144589
+
+BianchiEtAl2013 151126
+
+BiddellJohnson2013 150556
+
+Branch_Point_Tapering 146509
+
+Branco_2010 140828
+
+CA1_Aged 119266
+run()
+verify_graph_()
+
+CA1_Gomez_2011 144450
+
+CA1_abeta 87284
+
+CA1_multi 20212
+chdir("mechanism")
+xopen("mosinit.hoc")
+unix_spike_atten_hof()
+verify_graph_()
+
+CA3Atrophy 147867
+
+CNModel_May2013 150024
+
+CN_Bushy_Stellate 37857
+run()
+verify_graph_()
+
+CN_Pyr 37856
+runiv()
+verify_graph_()
+
+Ca1_Bianchi 143719
+
+CaT 19920
+run()
+verify_graph_()
+
+CanavierLandry2006 84612
+restart_("fig4b1")
+tstop=1000
+run()
+verify_graph_()
+
+CarvalhoBuonomano 125689
+
+CasaleEtAl2011 143635
+
+Channels_NEW 18500
+duration = 2 
+restart("demo_ampa")
+verify_graph_()
+
+Chirp 147539
+
+Chloride_Model 148253
+
+CoHCNS2000 19747
+run()
+verify_graph_()
+
+CruzEtAlS_cellModel 117459
+run()
+verify_graph_()
+
+D2modulation 98005
+run()
+verify_graph_()
+
+DAcomparison 167772
+//do not run Tried "initDialog.unmap(1)" - didnt work.  Need to change archive
+
+DAmodel 141272
+//do not run Problem is that Vbox.dialog() steals the focus (complex to fix)
+
+DG_BC 140789
+
+DLGN_NEW 3343
+restart("Fspin")
+init()
+run()
+verify_graph_()
+
+DRG_Devor 140038
+
+DendroDendriticInhibition 116094
+load_file("mosinit.hoc")
+run_experiment("fig2ace")
+tstop=40
+init()
+run()
+verify_graph_()
+run_experiment("fig1")
+tstop=1
+init()
+run_fig1bde()
+verify_graph_()
+
+DiFrancescoNoble1985 144520
+
+DynBasIrregSpNMDA 82784
+load_file("runShort.hoc")
+verify_graph_()
+
+ElectricallycoupledRetziusneurons 120910
+run()
+verify_graph_()
+
+EurJNeurosci2000 19491
+verify_graph_()
+
+FFI 124291
+stim.amp = 0.1
+runa()
+verify_graph_()
+
+FRB 125857
+
+FRBGamma 144579
+
+FV 138082
+
+FerranteEtAl2008 119283
+use_mcell_ran4(1)
+runi()
+verify_graph_()
+
+Figure5 140471
+
+Fineberg_et_al_2012 145672
+
+FleidervishEtAl2010 136715
+
+FoustEtAl2011 143442
+
+GPSingleCompartment 122329
+{ load_file("withSKsoma.hoc") init() }
+tstop = 500
+run()
+verify_graph_()
+
+GPeNeuronKitano 143100
+
+Ga_demo 97756
+xopen("show_start.hoc")
+verify_graph_()
+
+GeneralizedCarnevaleHinesScheme 115357
+makeplusplus()
+verify_graph_()
+
+Golgi_cell 112685
+run()
+verify_graph_()
+
+Golgi_cell_NaKATPAse 127021
+
+Gow_Devaux_2009 122442
+load_file("DCM_0.6um_axon.ses")
+newPlotV()
+run()
+verify_graph_()
+
+GrC 116835
+tstop=10
+run()
+verify_graph_()
+
+GranuleCell 46839
+verify_graph_()
+
+HAGPA 113997
+restart("demo_HPGA_non-saturating.hoc")
+tstop=30000
+run()
+verify_graph_()
+
+HB 2798
+run_c()
+verify_graph_()
+
+HBplusIh 141063
+//do not run Problem is that Vbox.dialog() steals the focus (complex to fix)
+
+HCN2k 19176
+experiment1()
+verify_graph_()
+
+HFO 114735
+run()
+verify_graph_()
+
+HHcn 127992
+
+HallermannEtAl2012 144526
+
+HayEtAl2013 149100
+
+Hines2011 137845
+
+HinesCarnevaleJNM2007 96444
+chdir("ring")
+load_file("ringpar.hoc")
+verify_graph_()
+
+Hipp_paper_code 123815
+tstop=5
+newPlotV()
+run()
+verify_graph_()
+
+Hossain 54903
+{load_file("Fig6-B.ses")}
+run()
+verify_graph_()
+
+HuEtAl2009 123897
+xopen("experiment/Pyramidal_Main.hoc")
+freePlay()
+tstop=20
+run()
+verify_graph_()
+
+IcaT 3533
+run()
+verify_graph_()
+
+Ih_current 144541
+
+JohnsonMcIntyre2008 114685
+short_run()
+verify_graph_()
+
+JonesEtAl2009 136803
+
+KampaStuart2006 108458
+AP3_toq = 1
+set_stim()
+run()
+verify_graph_()
+
+Katona_et_al 136176
+
+KerrEtAl2013 147366
+//do not run
+
+KimEtAl2013 150288
+
+KoendgenEtAl2008 118631
+use_mcell_ran4(1)
+graph_and_run()
+verify_graph_()
+
+Kopp-Scheinpflug2011 139657
+
+Kourennyi-etal2004 64216
+verify_graph_()
+
+KubotaEtAl2011 140299
+
+KuznetsovaEtAl2010 127507
+
+L5bPCmodelsEH 139653
+
+LFP 136310
+
+LGMD 144007
+
+LavzinEtAl2012 146565
+
+LetzkusEtAl2006 108459
+run()
+verify_graph_()
+
+LindsayEtAl2005 129149
+
+Liu-Kourennyi_2004 64228
+restart("0222AP_BR.ses")
+run()
+verify_graph_()
+
+LuthmanEtAl2011 144523
+objref test_graph_
+test_graph_ = new Graph()
+graphList[0].append(test_graph_)
+test_graph_.addexpr("v(.5)", 1, 1, 0.8, 0.9, 2)
+tstop=10
+init()
+run()
+verify_graph_()
+
+MRGaxon 3810
+stdinit()
+continuerun(2)
+cvode_active(1)
+continuerun(150)
+verify_graph_()
+
+MSN2009 121060
+Exec()
+verify_graph_()
+
+MSO_Zhouetal_2005 53869
+//takes a long time
+
+MT-GC 97263
+run()
+verify_graph_()
+
+MahonEtAl2000 150621
+
+MasurkarChen2011 140462
+
+McCormickEtAl2007YuEtAl2008 135839
+
+MiglioreMcTavish2013 149415
+
+MoradiEtAl2012 145836
+ParmFitnessGui[0].run()
+verify_graph_()
+
+MultiChirp 147578
+
+Munro_Kopell_corticalcontrol 136309
+
+MyFirstNEURON 3808
+xstatedum[2]=1
+new_experiment(3)
+run()
+verify_graph_()
+
+NCnote 64259
+use_mcell_ran4(1)
+run()
+verify_graph_()
+
+NEURON-2008b 113446
+tstop=500
+tstop_changed()
+run()
+verify_graph_()
+
+NMDA_Mg 50207
+run()
+verify_graph_()
+
+NN_kole 114394
+run()
+verify_graph_()
+
+NQS_with_example 97874
+//moddir modeldb
+verify_graph_()
+
+NTW_NEW 3670
+restart("Fig5A")
+run()
+verify_graph_()
+
+Nakano_FICN_model 151458
+
+NarayananJohnston2010 147538
+
+NegroniLascano 126467
+
+Neural_Computation 18197
+restart("demo_glutamate_neuralcomputation")
+verify_graph_()
+
+NeuroCubeWeblink 147487
+
+NeuroMorph 138273
+
+OLMmodel 28316
+verify_graph_()
+
+OverstreetEtAl2013 147460
+
+PFCcell 144089
+
+PalmerStuart2009 120798
+
+ParekhAscoli2013 148644
+
+Poleg-PolskyDiamond2011 139150
+
+PospischilEtAl2008 123623
+run()
+verify_graph_()
+
+PowersEtAl2012 143671
+
+PublioEtAl2009 124063
+/*beginscript
+sed 's/tstop = 6500/tstop = 100/' session.ses > temp.tmp
+mv temp.tmp session.ses
+endscript*/
+tstop=10
+run()
+verify_graph_()
+
+PurkReductionOnLine 149000
+
+Pyramidal_STDP_Gomez_Delgado_2010 144482
+
+R859C 87585
+verify_graph_()
+
+ROD 95870
+run()
+verify_graph_()
+
+ReConv 139883
+
+Recruitnet 135903
+
+Ribbon 50997
+restart("makefig7")
+verify_graph_()
+
+RichyandStarfish 102288
+fig9A1()
+verify_graph_()
+
+RomaniEtAl2013 147757
+
+RoyeckEtAl2008 115356
+short_test()
+verify_graph_()
+
+SeqLearn 147461
+//do not run Minimum time would be 1/2 hr default time is about 8.3 hours
+
+SFS-IPS-WM-network 98017
+//do not run
+
+SNRCA1 19746
+run()
+verify_graph_()
+
+SPUD_NRN_MySQL_20091026 97868
+//do not run
+
+SRandCRnet 135902
+
+SS-cortex 113732
+use_mcell_ran4(1)
+suprathresh()
+tstop=50
+tstop_changed()
+run()
+verify_graph_()
+
+SSC_model 114637
+
+SYN_NEW 18198
+restart("release")
+run()
+verify_graph_()
+
+Sbpap_code 125385
+
+Schizophr 138205
+
+ShepherdBrayton1979 144385
+
+ShortTermPlasticityMFGRC_Nieus2006 128446
+
+ShuEtAl20062007 135787
+
+Skolnik_python_WinogradEtAl2008 144376
+
+SpaceClampDemo 110560
+xopen("calcium.hoc")
+fig1b()
+objref gg, rvp_
+gg = new Graph()
+gg.size(-250,250,-80, 80)
+rvp_ = new RangeVarPlot("v")
+a_dend_3_0_0_0_1_1_1 rvp_.begin(1)
+a_dend_1_0_1_0_1_1_1 rvp_.end(1)
+rvp_.origin(9.96606)
+gg.addobject(rvp_, 2, 1, 0.8, 0.9)
+verify_graph_()
+
+SpineCaModel 116769
+verify_graph_()
+
+StiefelSejnowskiCode 93398
+restart("shortRun")
+verify_graph_()
+
+Stochastic 64195
+//do not run problem due to randomness and takes too long due to failure to set steps_per_ms consistent with dt
+
+ThomasPetrou2013 149174
+
+TimeScales-master 150284
+//do not run Mattione Le Novere missing _run_me.hoc in parallel model
+
+Traub2003 20756
+pyr3_ = new pyr3( 21 ) 
+setFig2()
+tstop=100
+run()
+verify_graph_()
+
+Uebachs-et-al_2010 125152
+
+V1_PFC_ModelDB 144553
+
+VNO 64212
+
+Vierling-ClaassenEtAl2010 141273
+
+VladimirovTuTraub2012 144401
+
+VladimirovTuTraub2013 150446
+
+WC 76879
+tstop=20
+run1(1)
+verify_graph_()
+
+WDR-Model 128559
+
+Welday_et_al 129067
+
+Welie-Wadman-JPhysiol-subiculum 82364
+reg_20()
+verify_graph_()
+
+Wimmer-et-al2009 123927
+
+XiEtal2013 150538
+
+YuEtAl2012 144570
+
+YuEtAlPNAS2007 135898
+
+ZhouColburn2010 143114
+
+a2dmodeldb 150245
+tstop=100
+init()
+run()
+verify_graph_()
+
+acker_antic 117207
+restart("AckerAnticBasalBackprop")
+RunAll()
+verify_graph_()
+
+alzheimer 144976
+
+amirdevor03 51022
+verify_graph_()
+
+anderson 3812
+verify_graph_()
+
+anetdemo 144586
+
+anyas2005 53435
+// disregard. mod files in subdirectory
+
+aradi1999 116740
+{init() run()}
+verify_graph_()
+
+arm1d 144538
+
+aubieEtAl2012 144511
+
+b 62285
+verify_graph_()
+
+b04feb12 35358
+verify_graph_()
+
+b07dec17 105507
+/* beginscript
+sed 's/batch_flag=0/batch_flag=1/
+s/tstop = 1e3/tstop = 20/' batch_.hoc > temp.tmp
+mv temp.tmp batch_.hoc
+endscript */
+load_file("batch_.hoc")
+verify_graph_()
+
+b07dec27_20091025 106891
+tstop=10
+runeg()
+verify_graph_()
+
+b08dec23 116830
+/*beginscript
+sed 's/tstop = 100/tstop = 20/' init.hoc > temp.tmp
+mv temp.tmp init.hoc
+endscript*/
+// takes too long and no gout data
+//load_file("init.hoc")
+//verify_graph_()
+
+b09jan08 116838
+/* beginscript
+sed 's/^showdemo=1/showdemo=0/' mosinit.hoc > temp.tmp
+mv temp.tmp mosinit.hoc
+endscript */
+tstop=10
+run()
+verify_graph_()
+
+b09jan13 116862
+verify_graph_()
+
+b1 62266
+run()
+verify_graph_()
+
+b11aug17 140881
+//do not run Lytton model takes too long to run and complex to edit
+
+ba 62284
+run()
+verify_graph_()
+
+baccus98 3807
+fig6()
+verify_graph_()
+
+badoual_stdp 116096
+tstop=1
+init()
+run()
+verify_graph_()
+
+baker05 85112
+verify_graph_()
+
+bbmit 2733
+verify_graph_()
+
+beelerReuter 97863
+verify_graph_()
+
+bfb-etal-2012 151404
+
+bfstdp 64261
+//do not run takes too long
+
+bogaard2009 121259
+load_file("homrun.hoc")
+verify_graph_()
+
+boosting 7386
+runc()
+verify_graph_()
+
+bpap 144490
+
+brill77 9848
+verify_graph_()
+
+bulbNet 2730
+//launch but do not run
+
+ca1 2796
+run()
+verify_graph_()
+
+ca3-summ 118098
+newPlotV()
+run()
+Graph[0].exec_menu("View = plot")
+verify_graph_()
+
+ca3-synresp 137259
+
+ca3_2002 20007
+verify_graph_()
+
+ca3_db 3263
+runb()
+verify_graph_()
+
+ca3b 101629
+tstop=250
+run()
+verify_graph_()
+
+ca3ihdemo 151282
+
+ca_rgc 3457
+run()
+verify_graph_()
+
+ca_t_lva 53893
+restart("fig3")
+verify_graph_()
+
+canavier1999 6763
+run()
+verify_graph_()
+
+cardiac1998 3800
+verify_graph_()
+
+cdlab 3434
+init()
+gr.showAllTimeGraphs=1
+tstop=1
+run()
+verify_graph_()
+
+chain_1d 94321
+tstop=10
+init()
+run()
+verify_graph_()
+
+chen2002 3793
+restart("fig5a")
+verify_graph_()
+
+cortex 3817
+restart("demo_PY_RS")
+run()
+verify_graph_()
+
+crane2001 3785
+verify_graph_()
+
+ctng-2013-10-05 146950
+
+ctxnet 52034
+run_short()
+verify_graph_()
+
+dLGN_modelDB 140249
+
+damodel 83547
+run()
+verify_graph_()
+
+db 3289
+run()
+verify_graph_()
+
+demo 22203
+//disregard cannot be run in batch mode
+
+dendgeom 18738
+verify_graph_()
+
+dendre 17663
+restart("re1_cc")
+run()
+verify_graph_()
+
+dendritic_complexity 147514
+
+dendtc 279
+restart("tc1_cc")
+run()
+verify_graph_()
+
+dentate_gyrus 124513
+
+dentategyrusnet2005 51781
+load_file("testnet.hoc")
+verify_graph_()
+
+destexhe_benchmarks 83319
+//disregard NEURON in subdirectory
+
+develop 126814
+
+dgbc 3801
+run()
+verify_graph_()
+
+djurisic2008 136026
+
+dm1_pn_model 118662
+proc run(){}
+restart_("figure_4a_cell1")
+newPlotV()
+proc run() { stdinit() continuerun(tstop) }
+run()
+verify_graph_()
+
+dodge73 3805
+verify_graph_()
+
+eaps 84589
+//ignore sim in subdirectory
+// have not been able to run yet
+////moddir mod
+// load_file("hoc/src/refs.hoc")
+// load_file("cells/d151.hoc")
+// load_file("hoc/src/file_util.hoc")
+// load_file("hoc/src/main.hoc")
+
+ephaptic 3676
+xopen("fig2.hoc")
+verify_graph_()
+
+fdemo 138379
+mytstop=0.1e3
+tstop=mytstop
+finish_run()
+verify_graph_()
+
+fh 3507
+verify_graph_()
+
+fietkiewicz2011 139418
+
+fink2000 125745
+
+fluct 8115
+use_mcell_ran4(1)
+run()
+verify_graph_()
+
+fs_internrn_neuron 113435
+init()
+run()
+verify_graph_()
+
+gap-modeldb 43039
+rung()
+verify_graph_()
+
+gaspiriniEtAl2004 44050
+runm()
+verify_graph_()
+
+gc-1.1 95960
+fig6a()
+verify_graph_()
+
+geigerEtAl1997 19022
+run()
+verify_graph_()
+
+genet_PC 147218
+
+geomindu 19214
+Main(5)
+run()
+verify_graph_()
+
+giuglianoEtAl2007 112086
+use_mcell_ran4(1)
+restart("metal()")
+run()
+verify_graph_()
+
+gludiff 3658
+glubes2D()
+run()
+verify_graph_()
+
+gp 105385
+loadfig9()
+tstop=100
+run()
+verify_graph_()
+
+granule 19591
+restart("fig1a")
+verify_graph_()
+restart("fig2a1")
+verify_graph_()
+restart("fig2a2")
+verify_graph_()
+restart("fig2a3")
+verify_graph_()
+restart("fig2b1")
+verify_graph_()
+restart("fig2b2")
+verify_graph_()
+restart("fig2b3")
+verify_graph_()
+
+grid 150239
+
+h_cno 3332
+run()
+verify_graph_()
+
+h_pg 3665
+run()
+verify_graph_()
+
+h_tc 3684
+run()
+verify_graph_()
+
+herzogEtAl01 86537
+restart_("fig4")
+verify_graph_()
+
+hh 5426
+verify_graph_()
+{restart() load_file("hhk.ses") run() verify_graph_()}
+{restart() load_file("hhna.ses") run() verify_graph_()}
+{restart() load_file("hhkfit.ses") run() verify_graph_()}
+{restart() load_file("hhnafit.ses") run() verify_graph_()}
+{restart() load_file("hhna.ses") run() verify_graph_()}
+
+hines2001 53451
+restart("fig7")
+verify_graph_()
+
+hines2004 53437
+run()
+verify_graph_()
+
+hoppy 144549
+
+hpcdemo 139421
+
+ihmodel 8284
+run()
+verify_graph_()
+
+inhibnet 21329
+//do not run random seed different every time
+
+izh 39948
+p(5)
+verify_graph_()
+
+joyner80 9853
+verify_graph_()
+
+k_interneurons 20015
+run()
+verify_graph_()
+
+ka_dg 3344
+run()
+verify_graph_()
+
+ka_kdr_mt 3648
+run()
+verify_graph_()
+
+ka_kdr_neoLI 3660
+run()
+verify_graph_()
+
+ka_rgc 3488
+run()
+verify_graph_()
+
+kca 3509
+verify_graph_()
+
+kdr_rgc 3491
+run()
+verify_graph_()
+
+kkt98 20014
+Main(1)
+verify_graph_()
+
+km 112546
+runiv()
+verify_graph_()
+
+kootsey83 120692
+load("fig7.hoc")
+verify_graph_()
+
+korngreenEtAl2005 83523
+//nothing to do
+
+korogod 19366
+Main(2)
+verify_graph_()
+
+kv31model 3454
+run(NetStim[0].interval=10)
+verify_graph_()
+
+kv72-R213QW-mutations 148094
+
+kx_photo 3802
+run()
+verify_graph_()
+
+lamina1 53569
+run()
+verify_graph_()
+
+lamotrigine 9769
+use_mcell_ran4(1)
+rund()
+verify_graph_()
+
+larkumEtAl2009_2 124043
+tstop=80
+run()
+verify_graph_()
+
+leeEtAl2003 125378
+
+lgnsigint 29942
+verify_graph_()
+
+lindgren89 10360
+verify_graph_()
+
+liuEtAl1998 93321
+fig3topleft()
+verify_graph_()
+
+locstepperf 33975
+ringperf()
+run()
+verify_graph_()
+
+lsimp2 51196
+run()
+verify_graph_()
+
+lytton97 9889
+verify_graph_()
+
+lytton97b 12631
+verify_graph_()
+
+lytton98 7399
+verify_graph_()
+
+lytton99 7400
+verify_graph_()
+
+magee2000 7509
+verify_graph_()
+
+magical7 87535
+runm()
+verify_graph_()
+
+mcn1 3511
+verify_graph_()
+
+mctavish_syncbylocation 144054
+
+migliore2010 127995
+
+mit4 2487
+run()
+verify_graph_()
+
+mitral 64296
+fig7A()
+verify_graph_()
+
+mitral_1999 3342
+verify_graph_()
+
+modeldb 144392
+
+modeldb-etoh 112359
+tstop=2000
+tstop_changed()
+control()
+verify_graph_()
+
+modeldb_package 144566
+
+moore78 9851
+verify_graph_()
+
+moore83 9852
+verify_graph_()
+
+motoneuron 3493
+run()
+verify_graph_()
+
+multisplit 97985
+verify_graph_()
+
+murphy01 7988
+verify_graph_()
+
+mutant 118986
+run()
+verify_graph_()
+
+mvns 53876
+restart("fig2c")
+verify_graph_()
+
+na2006 62673
+verify_graph_()
+
+na8st 128079
+
+na_rgc 3483
+run()
+verify_graph_()
+
+nacb_msp 112834
+verify_graph_()
+
+nainact 18742
+restart("fig6A")
+verify_graph_()
+
+nc-mri 106551
+use_mcell_ran4(1)
+tstop=10
+run()
+verify_graph_()
+
+ncdemo 136095
+
+netmod 64229
+// mod files in subdirectory
+
+network 139656
+//do not run
+
+neuroprosthesis 141505
+//do not run Specialized installation environment
+
+nevian 124394
+
+nfrost 93325
+run()
+verify_graph_()
+
+ngetting 93326
+run()
+verify_graph_()
+
+nrnpython 116491
+nrnpython("import ch6_model")
+verify_graph_()
+
+nrntraub 82894
+run()
+verify_graph_()
+
+obliques 55035
+runm()
+verify_graph_()
+
+oconnoretal2012 146030
+
+olm-int 87546
+cvode_active(1)
+tstop=200
+run()
+verify_graph_()
+
+oltedal 84655
+run()
+verify_graph_()
+
+package 144502
+
+pashut2011 138321
+
+patdemo 2488
+fig_1()
+fig1a()
+run()
+verify_graph_()
+
+pcell 82849
+load_file("fig2A.hoc")
+verify_graph_()
+
+plast 114665
+disp()
+verify_graph_()
+
+prknj 17664
+verify_graph_()
+
+purkinje 48332
+verify_graph_()
+
+purkinje_ppr 126637
+
+rall1964 116981
+fig5()
+verify_graph_()
+
+rebound 126776
+
+reduction1.0 146376
+
+rejuvenation 97860
+run()
+verify_graph_()
+
+ring 33728
+verify_graph_()
+
+saghatelyan 50210
+runshift()
+verify_graph_()
+
+sc-pp 19696
+runh()
+verify_graph_()
+
+sheasbyfohlmeister1999 18501
+verify_graph_()
+
+shrager91 3798
+{inter_fhdens(0.4e-3) demyl1(1,3) run()}
+verify_graph_()
+
+singleDendrite 143604
+
+slowinact 2937
+run3()
+verify_graph_()
+
+spikeinit 8210
+dend_inj()
+verify_graph_()
+
+spinebranches 18502
+restart("ltp_two")
+verify_graph_()
+
+spinycell 39949
+verify_graph_()
+
+splitcell 97917
+traub_launch()
+verify_graph_()
+
+spru1998 3677
+verify_graph_()
+
+stdpscalingpaper 147141
+
+sth-model 74298
+//takes too long
+/* beginscript
+sed 's,tstop *=,tstop = 100//,
+/whichAP/,$d
+' sample.hoc > temp.tmp
+mv temp.tmp sample.hoc
+endscript*/
+load_file("sample.hoc")
+verify_graph_()
+
+stnAxonDbsModel 121253
+short_run()
+verify_graph_()
+
+stochastichh 50391
+verify_graph_()
+
+stockbridge1982 21984
+verify_graph_()
+
+stockbridge84 9888
+verify_graph_()
+
+synchro-ca1 32992
+/* beginscript
+echo 'use_mcell_ran4(1)' > temp
+cat mosinit.hoc >> temp
+mv temp  mosinit.hoc
+endscript */
+verify_graph_()
+
+synmap 3682
+/* beginscript
+echo 'use_mcell_ran4(1)' > temp
+cat mosinit.hoc >> temp
+mv temp  mosinit.hoc
+endscript */
+verify_graph_()
+
+thal_aug_resp 37819
+verify_graph_()
+
+theta 116983
+tstop=10
+run()
+verify_graph_()
+
+timing 3167
+use_mcell_ran4(1)
+run()
+verify_graph_()
+
+tsodyks 3815
+run_fig1a()
+init()
+run()
+verify_graph_()
+
+v8sources 114355
+//moddir mechanisms
+forall delete_section()
+chdir("main")
+load_file("main.hoc")
+cell_cfg(1)
+tstop = 10
+tstop_changed()
+run()
+verify_graph_()
+
+vanElburg_vanOoyen_2010 114359
+
+varela 3264
+use_mcell_ran4(1)
+run_fig3a()
+init()
+run()
+verify_graph_()
+
+vs4_modelDB 116956
+run()
+verify_graph_()
+
+wang1996 26997
+fig1a()
+verify_graph_()
+
+weaver_SimAnn_ObjFcn 87473
+//disregard
+
+weblink 83344
+// disregard
+
+westerfield78 9849
+verify_graph_()
+
+window 7659
+runp()
+verify_graph_()
+
+withdrawal 126640
+
+xiaoshenli 71312
+NregNsyn(4)
+verify_graph_()
+
+zippedModels 53965
+// disregard
