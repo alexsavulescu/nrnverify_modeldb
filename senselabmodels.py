@@ -66,7 +66,7 @@ html=response.read()
 modeleq = html.split("model=")
 objectids=[]
 for tmp in modeleq[1:]:
-  tmplist=tmp.split("'")
+  tmplist=tmp.split('"')
   objectids.append(tmplist[0])
 print("We have found "+str(len(objectids))+" NEURON model objectids")
 
