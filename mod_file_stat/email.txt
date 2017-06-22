@@ -1,0 +1,66 @@
+I have cobbled together some scripts (attached) that output summaries
+of number of mod files found which contain a boolean AND of search key
+elements in their text:
+
+there are  6029  mod files in modeldb of which  3295  are unique
+...
+--------------------------------------------------------------
+For search key element:  ['ARTIFICIAL_CELL','NET_RECEIVE','net_event']
+        there are 96 files of which 57 are unique
+--------------------------------------------------------------
+For search key element:  ['POINT_PROCESS','NET_RECEIVE']
+        there are 483 files of which 346 are unique
+--------------------------------------------------------------
+For search key element:  ['ELECTRODE_CURRENT']
+        there are 100 files of which 69 are unique
+--------------------------------------------------------------
+For search key element:  ['USEION','READi']
+        there are 376 files of which 205 are unique
+--------------------------------------------------------------
+For search key element:  ['SUFFIX','USEION','WRITEi']
+        there are 3806 files of which 1882 are unique
+--------------------------------------------------------------
+For search key element:  ['SUFFIX','USEION','NONSPECIFIC_CURRENT']
+        there are 194 files of which 143 are unique
+>>> 
+
+The lack of space between the "write" and the "i" is OK as spaces were
+removed in the processing.
+
+To re-run or modify scripts need to be run in the top level of a clone
+of the nrnverify repository in this order:
+
+./senselabmodels.py
+./unzip_all.sh
+./stats_1.py
+
+Note that the modelview analysis does not contain all the NEURON models available from modeldb.
+
+
+From: Hines, Michael
+Sent: Sunday, May 7, 2017 6:21 PM
+To: Morse, Tom
+Subject: some modeldb statistics about mod files.
+ 
+Hi Tom,
+... and in the introduction I'm toying with a possible
+paragraph that reads.
+
+Most published NEURON models rely on model specific NMODL descriptions.
+For example, as of this writing, the ModelDB database
+(https://sendslab.med.yale.edu/modeldb) contains model code for xxx
+NEURON models which include xxx mod files of which xxx are unique.
+Of the total number, xxx of these are channel, and xxx are ion accumulation
+models, xxx are synapse models, xxx are electrode models, and xxx
+describe artificial cells.
+
+Can you fill in as many of the xxx as are easily figured out. It is not necessary
+to be perfect. eg. Number of mod files containing
+ARTIFICIAL_CELL and NET_RECEIVE and net_event,
+POINT_PROCESS and NET_RECEIVE
+ELECTRODE_CURRENT
+USEION and READ current
+SUFFIX and ((USEION and WRITE current) || NONSPECIFIC_CURRENT)
+I'm hoping total number and unique number come from the modelview info.
+Thanks.
+Michael
